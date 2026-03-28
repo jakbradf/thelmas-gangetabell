@@ -51,6 +51,15 @@
     }
 
     /* ── HOME ── */
+    .thelma-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      margin-bottom: 14px;
+    }
     .home-emoji { font-size: 72px; margin-bottom: 12px; }
     .home-title {
       font-size: 28px;
@@ -334,7 +343,7 @@
 <!-- ── HOME ── -->
 <div id="screen-home" class="screen active">
   <div class="card">
-    <div class="home-emoji">🌟</div>
+    <img src="thelma.jpg" alt="Thelma" class="thelma-photo">
     <div class="home-title">Thelmas<br>gangetabell</div>
     <div class="home-sub">Øv på 1–10 tabellen!</div>
     <button class="btn-primary" onclick="showSelect()">La oss starte! 🚀</button>
