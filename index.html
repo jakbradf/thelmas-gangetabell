@@ -491,7 +491,7 @@
   function showQuestion() {
     answered = false;
     const q = questions[currentIdx];
-    timeLeft = 5;
+    timeLeft = 10;
 
     // Header
     document.getElementById('progress-text').textContent =
@@ -543,9 +543,9 @@
   function updateTimerUI(t) {
     const ring = document.getElementById('timer-ring');
     const num  = document.getElementById('timer-number');
-    const offset = CIRCUMFERENCE * (1 - t / 5);
+    const offset = CIRCUMFERENCE * (1 - t / 10);
     ring.style.strokeDashoffset = offset;
-    ring.style.stroke = t <= 2 ? '#ef4444' : '#fbbf24';
+    ring.style.stroke = t <= 3 ? '#ef4444' : '#fbbf24';
     num.textContent = t;
   }
 
